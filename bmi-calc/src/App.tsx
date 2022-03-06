@@ -1,4 +1,17 @@
-import { IonApp, setupIonicReact } from '@ionic/react';
+import {
+    IonApp,
+    setupIonicReact,
+    IonHeader,
+    IonToolbar,
+    IonIcon,
+    IonMenuButton,
+    IonButtons,
+    IonButton,
+    IonRow,
+    IonCol
+} from '@ionic/react';
+
+import {search} from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -18,13 +31,14 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Home from "./pages/Home";
 
 setupIonicReact();
 
 const App = () => (
-  <IonApp>
-    <h1>Gourab</h1>
-  </IonApp>
+    <IonApp>
+        <Home></Home>
+    </IonApp>
 );
 
 export default App;
